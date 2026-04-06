@@ -184,14 +184,14 @@ _state_subsequent_run() {
         echo "-----"
 
         # 只要求輸入變動參數
-        read -p "請輸入今日體重 (KG)： " _VAL_WEIGHT
+        read -p " 請輸入今日體重 (KG)： " _VAL_WEIGHT
 
         # 初始化細部資訊防污染
         _VAL_BODYFAT=""; _VAL_MUSCLE=""; _VAL_VISCERAL=""; _VAL_BMR=""
         _VAL_DIASTOLIC=""; _VAL_SYSTOLIC=""; _VAL_HR=""; _VAL_SPO2=""
 
-        echo ""
-        read -p "是否要繼續填入更細部的身體數據？ [Y/n]： " detail_flag
+        echo "-----"
+        read -p " 是否要繼續填入更細部的身體數據？ [Y/n]： " detail_flag
         case "$detail_flag" in
             [Yy]* | "" )
                 echo "-----"
